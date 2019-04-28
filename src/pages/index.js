@@ -42,7 +42,10 @@ const IndexPage = () => (
     <div css={main}>
       <h2 css={header2}><i>n.</i> Any activity that is pursued as a trade or profession; a calling</h2>
       <p css={para}>
-        Metier offers a unique approach to helping companies find the best talent in the market by hiring and molding apprentices into exactly what your company needs. Why is the Metier program right for your company? Because our company takes into consideration all the things that go into making an employee just the right fit; including things like diversity, your company’s specific tech stack, and thanks to our learn on-the-job approach where our apprentices will learn alongside one of our experienced  mentors. When you are ready to hire on the candidate, the transition is seamless. Candidates will be trained with the specific technology and soft skills they need to help grow your team. Contact with us to find out how to take the first step toward streamlining the hiring process and gaining access to candidates that are learning cutting edge technology.
+        Building great code is a calling, one that developers continually learn and hone their skills towards. We've found that those aspirations of being great at software is something we can teach to new devs. In that teaching we've discovered that wonderful things happen within an team of developers; senior and mid level devs learn and teach, code culture improves, and code delivery speed goes up when a team starts to gel.
+      </p>
+      <p css={para}>
+        Our program works to find people who are best suited for a career as a developer. We train them to be some of the most promising people to work on your code. Our teaching processes get new developers up to speed quickly while also giving them a handle on the best practices for writing software. We teach these fresh developers that learning is a life long process and give them insight on how to do it well. We pass on our calling to be great developers.
       </p>
     </div>
   </Layout>
