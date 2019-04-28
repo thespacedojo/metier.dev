@@ -14,8 +14,8 @@ import Header from "./header"
 import "./layout.css"
 
 const footer = css`
-  grid-area: footer;
-  height: 10vh;
+  grid-row-start: 3;
+  text-align: center;
 `
 
 const Layout = ({ children }) => (
@@ -37,6 +37,11 @@ const Layout = ({ children }) => (
             maxWidth: 960,
             padding: `0px 1.0875rem 1.45rem`,
             paddingTop: 0,
+            width: `100vw`,
+            height: `100vh`,
+            display: `grid`,
+            gridTemplateColumns: `1fr`,
+            gridTemplateRows: `10vh 1fr 10vh`,
           }}
         >
           <main >{children}</main>
