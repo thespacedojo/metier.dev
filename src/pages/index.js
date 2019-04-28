@@ -19,6 +19,7 @@ const header2 = css`
   margin: 0 auto;
   font-size: 1.2em;
   padding: 1rem 1rem;
+  grid-row-start: 2;
   @media (min-width: 420px) {
     width: 70%;
     padding: 2rem 3rem;
@@ -26,7 +27,7 @@ const header2 = css`
 `
 
 const main = css`
-  grid-row-start: 2;
+  grid-row-start: 3;
 `
 
 const para = css`
@@ -39,8 +40,8 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <h1 css={header}>Metier</h1>
+    <h2 css={header2}><i>n.</i> Any activity that is pursued as a trade or profession; a calling</h2>
     <div css={main}>
-      <h2 css={header2}><i>n.</i> Any activity that is pursued as a trade or profession; a calling</h2>
       <p css={para}>
         Building great code is a calling, one that developers continually learn and hone their skills towards. We've found that those aspirations of being great at software is something we can teach to new devs. In that teaching we've discovered that wonderful things happen within an team of developers; senior and mid level devs learn and teach, code culture improves, and code delivery speed goes up when a team starts to gel.
       </p>

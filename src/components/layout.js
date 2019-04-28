@@ -14,10 +14,17 @@ import Header from "./header"
 import "./layout.css"
 
 const footer = css`
-  grid-row-start: 3;
+  grid-row-start: 4;
   text-align: center;
 `
 
+const grid = css`
+  margin: 0 auto;
+  max-width: 960;
+  padding: 0px 1.0875rem 1.45rem;
+  padding-top: 0;
+  width: 100vw;
+`
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -32,17 +39,7 @@ const Layout = ({ children }) => (
     render={data => (
       <div>
         <div
-          style={{
-            margin: `0 auto`,
-            maxWidth: 960,
-            padding: `0px 1.0875rem 1.45rem`,
-            paddingTop: 0,
-            width: `100vw`,
-            height: `100vh`,
-            display: `grid`,
-            gridTemplateColumns: `1fr`,
-            gridTemplateRows: `10vh 1fr 10vh`,
-          }}
+          css={grid}
         >
           <main >{children}</main>
           <footer css={footer}>
