@@ -1,5 +1,7 @@
 html, body {
   height: 100%;
+  background-color: #2D3444;
+  color: white;
 }
 html {
   font-family: sans-serif;

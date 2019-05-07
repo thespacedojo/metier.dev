@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React from "react"
+import React, { Fragment } from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import { css } from '@emotion/core'
@@ -18,7 +18,7 @@ const footer = css`
   flex-shrink: 0;
   height: 4rem;
   color: white;
-  background-color: #222;
+  background-color: #555;
   align-items: center;
   justify-content: center;
 
@@ -29,6 +29,7 @@ const footer = css`
 
 const main = css`
   margin: 0 auto;
+  color: white;
   padding: 0px 1.0875rem 1.45rem;
   padding-top: 0;
   flex: 1 0 auto;
@@ -53,9 +54,10 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <div css={flexer}>
+        <Header siteTitle={"Metier"}/>
         <main css={main} >{children}</main>
         <footer css={footer}>
-          © {new Date().getFullYear()}, Built with
+          © {new Date().getFullYear()} Fourbeansoup LLC. Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
