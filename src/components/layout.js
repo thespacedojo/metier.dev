@@ -18,7 +18,7 @@ const footer = css`
   flex-shrink: 0;
   height: 4rem;
   color: white;
-  background-color: #555;
+  background-color: #687F92;
   align-items: center;
   justify-content: center;
 
