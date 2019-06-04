@@ -6,20 +6,32 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
+const headers = css`
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  width: 80%;
+`
+
 const header2 = css`
   font-family: 'Merriweather', serif;
-  width: 90%;
-  margin: 0 auto;
   font-size: 1.2em;
-  padding: 1rem 1rem;
-
-  @media (min-width: 420px) {
-    width: 70%;
+  padding: 1rem 0;
+  margin-bottom: 0;
+  & i {
+    font-size: 0.8em;
+    color: #CBD0CF;
   }
+
+`
+const header3 = css`
+  font-size: 1.1em;
+  margin-bottom: 0;
 `
 
 const main = css`
-  grid-row-start: 3;
+  margin-top: 1rem;
 `
 
 const para = css`
@@ -31,8 +43,10 @@ const para = css`
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h2 css={header2}>Metier &#8212; <i>noun</i>: </h2>
-    <h2 css={header2}>Any activity that is pursued as a trade or profession; a calling</h2>
+    <div css={headers}>
+      <h2 css={header2}>Metier <i>noun</i> </h2>
+      <h3 css={header3}>Any activity that is pursued as a trade or profession; a calling</h3>
+    </div>
     <div css={main}>
       <p css={para}>
         Building great code is a calling, one that developers continually learn and hone their skills towards. We've found that those aspirations of being great at software is something we can teach to new devs. In that teaching we've discovered that wonderful things happen within an team of developers; senior and mid level devs learn and teach, code culture improves, and code delivery speed goes up when a team starts to gel.

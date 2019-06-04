@@ -33,6 +33,9 @@ const main = css`
   padding: 0px 1.0875rem 1.45rem;
   padding-top: 0;
   flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `
 
 const flexer = css`
