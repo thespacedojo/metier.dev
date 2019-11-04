@@ -17,8 +17,6 @@ const footer = css`
   display:flex;
   flex-shrink: 0;
   height: 4rem;
-  color: white;
-  background-color: #687F92;
   align-items: center;
   justify-content: center;
 
@@ -29,7 +27,6 @@ const footer = css`
 
 const main = css`
   margin: 0 auto;
-  color: white;
   padding: 0px 1.0875rem 1.45rem;
   padding-top: 0;
   flex: 1 0 auto;
